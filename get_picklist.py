@@ -36,7 +36,7 @@ def processPicklistField(clientService, sobject, describesObjectField):
         fieldname = describesObjectField['name']
         label = picklistValues['label']
         value = picklistValues['value']
-        txt = f'"{sobjectname}\","{fieldname}","{label}","{value}"'
+        txt = f'"{sobjectname}","{fieldname}","{label}","{value}"'
         print(txt)
 
 clientService = login()
